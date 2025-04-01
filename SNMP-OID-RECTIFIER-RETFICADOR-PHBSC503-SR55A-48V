@@ -1,0 +1,28 @@
+SNMP OIDS para RETIFICADORES SR55A-48V/01 (48V-55A) - PHB ELETRONICA 
+SNMP Rectifier SR55A-48V/01 (48V-55A) - PHB ELETRONICA 
+PHB SC503 (Unidade de Supervisão) 
+--------------------------------------------------------------
+  // AC DISTRIBUTION
+  ".1.3.6.1.4.1.39553.10.1.1.1403.0", // voltage R (V) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.1.1.1404.0", // voltage S (V) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.1.1.1405.0", // voltage T (V) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.1.1.5.0",    // current R (A) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.1.1.6.0",    // current S (A) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.1.1.7.0",    // current T (A) (Zabbix Pre-Processing * 0.01) 
+
+  // DC DISTRIBUTION
+  ".1.3.6.1.4.1.39553.10.3.1.1.0", // bus voltage      (V) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.3.1.2.0", // load current tot (A) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.3.1.4.0", // battery current  (A) (Zabbix Pre-Processing * 0.01) 
+
+  // RECTIFIER
+  ".1.3.6.1.4.1.39553.10.2.1.1.0",   // output voltage (V) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.2.1.201.0"// output current (A) (Zabbix Pre-Processing * 0.01) 
+  ".1.3.6.1.4.1.39553.10.3.1.799.0 // battery temperature (Celcius) (Zabbix Pre-Processing * 0.01)
+
+--------------------------------------------------
+// INFORMAÇÃO DOS MÓDULOS; ( Você pode criar um Discovery no Zabbix,  caso tenha mais de um módulo) 
+1.3.6.1.4.1.39553.10.2.5.3.1.18.0 SERIAL 
+1.3.6.1.4.1.39553.10.2.5.3.1.6.0  // Input Voltage  (V) (Zabbix Pre-Processing * 0.01) 
+1.3.6.1.4.1.39553.10.2.5.3.1.2.0 //  Output Voltage (V) (Zabbix Pre-Processing * 0.01)
+1.3.6.1.4.1.39553.10.2.5.3.1.3.0 // Output Current (A)  (Zabbix Pre-Processing * 0.01)
